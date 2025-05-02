@@ -8,7 +8,7 @@ st.set_page_config(page_title="Course Name-Based Recommender", layout="wide")
 
 @st.cache_data
 def load_data():
-    df = pd.read_excel("course_data.xlsx")
+    df = pd.read_excel("online_course_recommendation_v2.xlsx")
 
     # Encode categorical features
     le_diff = LabelEncoder()
